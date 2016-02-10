@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Race Game</title>
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id='arena'>
+    <div id='help'>
+      <h2>Who is running faster?</h2>
+      <p><strong>PLAYER 1 - RABIT</strong>: PRESS KEY <em>'Q'</em></p>
+      <p><strong>PLAYER 2 - TURTLE</strong>: PRESS KEY <em>'P'</em></p>   
+    </div>
+    <div>
+      <img src="rabit.png" alt="rabit-palyer1" id='player1' class='player' style='margin-Left:0%'>
+      <img src="victory.jpg" alt="victory" id='victory'>
+      <img src="turtle.png" alt="turtle-player2" id='player2' class='player' style='margin-Left:0%'>  
+    </div>
+  </div>
+  <div id='result' style='display:none'>
+      <h2 class='playername'></h2>
+      <button type="" onClick='reset()'>Play Again/Close</button>     
+    </div>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

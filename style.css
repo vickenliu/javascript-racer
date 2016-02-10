@@ -1,0 +1,33 @@
+#arena{
+  width: 90%;
+  height: 100vh;
+  min-height: 500px;
+  margin:5px 5%;
+  border: 2px solid black;
+}
+#help{
+  display: block;
+  margin:5px auto;
+  text-align: center;
+}
+.player{
+  display: block;
+  margin-top: 10vh;
+  margin-left: 1%;
+}
+#victory{
+  margin-top: -22px;
+  float: right;
+}
+#result{
+  display: none;
+  border: 1px solid black;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  z-index: 10;
+  margin:20px auto;
+  position: absolute;
+  left: 25%;
+  top: 120px;
+}
