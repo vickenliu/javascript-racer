@@ -1,8 +1,8 @@
 #arena{
-  width: 90%;
-  height: 100vh;
+  display: block;
+  width: 100%;
   min-height: 500px;
-  margin:5px 5%;
+  margin: 0px auto;
   border: 2px solid black;
 }
 #help{
@@ -10,14 +10,32 @@
   margin:5px auto;
   text-align: center;
 }
-.player{
+#map{
+  position: relative;
   display: block;
-  margin-top: 10vh;
+  margin: 5px auto;
+  width: 1000px;
+  height: 600px;
+  border: 1px solid red;
+}
+.player{
+  position: absolute;
+  top:300px;
+  display: block;
   margin-left: 1%;
+  width: 30px;
+
+}
+#player1{
+  top:250px;
+}
+#player2{
+  top:315px;
 }
 #victory{
-  margin-top: -22px;
-  float: right;
+  position: absolute;
+  top: 250px;
+  right: 0px;
 }
 #result{
   display: none;
@@ -30,4 +48,36 @@
   position: absolute;
   left: 25%;
   top: 120px;
+}
+div.block{
+  width: 100px;
+  height: 120px;
+  border: 1px solid blue;
+  display: block;
+  position: absolute;
+}
+#block1{
+  top:60px;
+  left: 200px;
+}
+#block2{
+  top:240px;
+  left: 200px;
+}
+#block3{
+  top:420px;
+  left: 200px;
+}
+#block4{
+  top:150px;
+  left: 450px;
+}
+#block5{
+  top:330px;
+  left: 450px;
+}
+#block6{
+  height: 300px;
+  top:150px;
+  left: 750px;
 }

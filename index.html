@@ -3,6 +3,7 @@
 <head>
   <title>Race Game</title>
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -12,7 +13,29 @@
       <p><strong>PLAYER 1 - RABIT</strong>: PRESS KEY <em>'Q'</em></p>
       <p><strong>PLAYER 2 - TURTLE</strong>: PRESS KEY <em>'P'</em></p>   
     </div>
-    <div>
+    <div id='custermize'>
+      <div class='form-group'>
+          <label for='speedinput'>Speed:</label>
+          <select id='speedinput' name='speedinput' class='form-control'>
+            <option value="1">FAST</option>
+            <option value="2">MEDIUM</option>
+            <option value="3" selected>SLOW</option>
+          </select>
+      </div>
+    </div>
+    <div id='map'>
+      <div class='block' id='block1'>
+      </div>
+      <div class='block' id='block2'>
+      </div>
+      <div class='block' id='block3'>
+      </div>
+      <div class='block' id='block4'>
+      </div>
+      <div class='block' id='block5'>
+      </div>
+      <div class='block' id='block6'>
+      </div>
       <img src="rabit.png" alt="rabit-palyer1" id='player1' class='player' style='margin-Left:0%'>
       <img src="victory.jpg" alt="victory" id='victory'>
       <img src="turtle.png" alt="turtle-player2" id='player2' class='player' style='margin-Left:0%'>  
