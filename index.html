@@ -5,24 +5,33 @@
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src='http://code.jquery.com/jquery-2.2.1.min.js
+'></script>
 </head>
 <body>
-  <div id='arena'>
-    <div id='help'>
-      <h2>Who is running faster?</h2>
-      <p><strong>PLAYER 1 - RABIT</strong>: PRESS KEY <em>'Q'</em></p>
-      <p><strong>PLAYER 2 - TURTLE</strong>: PRESS KEY <em>'P'</em></p>   
-    </div>
-    <div id='custermize'>
-      <div class='form-group'>
-          <label for='speedinput'>Speed:</label>
+  <div id='arena' class='container'>
+    <h2>Who is running faster?</h2>
+    <div id='help' class='row'>
+      <div class='col-md-6'>
+        <img src="key.png" class='pull-right'>
+      </div>
+      <div id='custermize' class='col-md-6 pull-left'>
+        <div >
+          <h3>Player1- Red will use On the left side of keyboard!</h3>
+          <h3>Player2- Blue will use On the Right side of keyboard!</h3>
+        </div>
+        <div class='form-group'>
+          <label for='speedinput' class='pull-left'>Speed:</label>
           <select id='speedinput' name='speedinput' class='form-control'>
             <option value="1">FAST</option>
             <option value="2">MEDIUM</option>
             <option value="3" selected>SLOW</option>
           </select>
-      </div>
+          <button class='btn btn-primary btn-lg' id='startbtn'>LET'S START</button>
+        </div>
+      </div>  
     </div>
+
     <div id='map'>
       <div class='block' id='block1'>
       </div>
@@ -36,9 +45,14 @@
       </div>
       <div class='block' id='block6'>
       </div>
-      <img src="rabit.png" alt="rabit-palyer1" id='player1' class='player' style='margin-Left:0%'>
+      <div id='player1' class='player' alt="Red-palyer1">
+      </div>
+      <div class='player' id='final'></div>
+      <div id='player2' class='player' alt="Blue-player2">
+      </div>
+      <!-- <img src="rabit.png" alt="rabit-palyer1" id='player1' class='player' style='margin-Left:0%'> -->
       <img src="victory.jpg" alt="victory" id='victory'>
-      <img src="turtle.png" alt="turtle-player2" id='player2' class='player' style='margin-Left:0%'>  
+      <!-- <img src="turtle.png" alt="turtle-player2" id='player2' class='player' style='margin-Left:0%'>   -->
     </div>
   </div>
   <div id='result' style='display:none'>

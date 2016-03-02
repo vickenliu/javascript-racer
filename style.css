@@ -4,41 +4,56 @@
   min-height: 500px;
   margin: 0px auto;
   border: 2px solid black;
+  text-align: center;
 }
 #help{
   display: block;
   margin:5px auto;
   text-align: center;
+  background-color: #FFBC42;
+
 }
 #map{
   position: relative;
-  display: block;
+  display: none;
   margin: 5px auto;
   width: 1000px;
   height: 600px;
   border: 1px solid red;
+  background: url('brick.jpg') repeat top left;
 }
 .player{
   position: absolute;
   top:300px;
   display: block;
-  margin-left: 1%;
-  width: 30px;
-
+  width: 20px;
+  height: 20px;
 }
 #player1{
-  top:250px;
+  background-color: red;
+  top:290px;
+  left: 0px;
 }
 #player2{
-  top:315px;
+  background-color: blue;
+  top:310px;
+  left: 0px;
 }
 #victory{
   position: absolute;
   top: 250px;
-  right: 0px;
+  right: -80px;
+  z-index: -11;
+}
+#final{
+  border-radius: 50%;
+  top:290px;
+  right:-10px;
+  background-color: gold;
 }
 #result{
   display: none;
+  background-color: #6AAFE6;
   border: 1px solid black;
   width: 50%;
   height: 200px;
@@ -55,6 +70,7 @@ div.block{
   border: 1px solid blue;
   display: block;
   position: absolute;
+  background: #E71D36 url('stop.png') repeat-y top left;
 }
 #block1{
   top:60px;
@@ -77,7 +93,10 @@ div.block{
   left: 450px;
 }
 #block6{
-  height: 300px;
-  top:150px;
+  height: 360px;
+  top:120px;
   left: 750px;
+}
+#startbtn{
+  margin-top: 50px;
 }
