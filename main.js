@@ -1,14 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('keyup',run,false);
+  $('#return').click(function(){
+    $(this).fadeOut();
+    $('#map').slideUp(300,function(){
+      reset();
+      $('#help').fadeIn(300);
+    });
+  });
   $('#startbtn').click(function(){
+    speed=10*($('#speedinput').val());
     $('#help').fadeOut(300,function(){
       reset();
       $('#map').slideDown();
-    })
+    });
+    $('#return').fadeIn(200);
   });
 
 });
-var speed=20;
+var speed;
 function run(e){
     e.preventDefault();
     var player1=$('#player1'),player2=$('#player2');
