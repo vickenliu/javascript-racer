@@ -77,7 +77,7 @@ function upDown(player,direction){
   }
   if(top<0 || top> 580){
     return false;
-  }else if(left>=980 && top>= 300){
+  }else if(left>=980 && top>= 290 && top<= 320){
     document.removeEventListener('keyup',run);
     var result=document.querySelector('#result');
     result.style.display='block';
@@ -112,9 +112,9 @@ function leftRight(player,direction){
   }else{
     left=parseInt($(player).css('left'))-speed;
   }
-  if(left<0){
+  if(left<0 || left>1000){
     return false;
-  }else if(left>950 && top<290){ return false;}else if(left>=950 && top>= 290){
+  }else if(left>950 && top<290){ return false;}else if(left>=950 && top>= 290 && top<=320){
     document.removeEventListener('keyup',run);
     var result=document.querySelector('#result');
     result.style.display='block';
